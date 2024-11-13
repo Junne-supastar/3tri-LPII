@@ -1,0 +1,295 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+     margin: 0;
+     padding: 0;
+
+     box-sizing: border-box;
+     font-size: 1em;
+     font-family: "Poppins", sans-serif;
+
+}
+
+:root {
+     --c01: #fff;
+     --c02: #000;
+     --c03: #F2ACBF;
+     --c04: #A67C87;
+     --c05: #F2C4D0;
+     --c06: #F2DCE0;
+     --c07: #594246;
+     --c08: #0000009b;
+}
+
+header {
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+
+}
+
+.logo-frase {
+     display: flex;
+
+     align-items: center;
+     flex-direction: column;
+     align-items: start;
+     justify-content: baseline;
+     margin-left: 50px;
+     height: 500px;
+
+
+}
+
+header nav {
+     width: 700px;
+     height: 450px;
+     background-image: url(../IMG/Ellipse\1.png);
+     background-size: contain;
+     background-position: right;
+     background-repeat: no-repeat;
+     
+}
+
+.texto {
+     margin-left: 50px;
+     margin-top: 20px;
+}
+
+h1 {
+     color: var(--c07);
+     
+     
+}
+
+.título {
+     margin-left: 100px;
+
+}
+
+.texto legend {
+     color: var(--c08);
+}
+
+span {
+     text-decoration: underline var(--c03);
+
+}
+
+
+#Logo img {
+     width: 150px;
+     height: 150px;
+     object-fit: contain;
+     margin-top: -30px;
+     
+
+}
+
+.nav-link {
+     color: var(--c04);
+    
+     transition: 0.5s;
+     font-weight: 500;
+}
+
+.nav-link:hover {
+     color: var(--c07);
+}
+
+.nav {
+     margin-top: 10px;
+     margin-right: 15px;
+}
+
+.cad {
+     background-color: var(--c07);
+     border-radius: 5px;
+     border: 0;
+}
+
+.cad-card {
+     color: var(--c01);
+     background-color: var(--c04);
+     border: 0;
+     
+     font-weight: 500;
+
+}
+
+.cad-card-canc {
+     font-weight: 500;
+     border: 0;
+     margin-left: 5px;
+
+}
+
+.cad-card:hover {
+     background-color: var(--c01);
+     color: var(--c07);
+     outline: 0.5px solid var(--c07);
+}
+
+.cad-card-canc:hover {
+     background-color: var(--c01);
+     color: var(--c07);
+     outline: 0.5px solid var(--c07);
+
+}
+
+
+.card-img-top {
+     width: 286px;
+     height: 200px;
+     object-fit: cover;
+
+}
+
+.conteudo, .conteudo-home{
+     display: flex;
+     gap: 3rem;
+     margin-top: 20px;
+     margin-bottom: 130px;
+     justify-content: center;
+}
+
+
+.hr-um {
+     margin-bottom: 130px;
+}
+
+footer {
+     margin-top: 50px;
+}
+
+.card {
+     transition: 0.5s;
+}
+
+.card:hover {
+     background-color: var(--c07);
+     border: 0.5px solid var(--c01);
+     color: var(--c01);
+     transform: scale(1.1);
+
+}
+
+.pix img {
+     width: 300px;
+     height: 300px;
+
+}
+
+.pag-pix {
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+     justify-content: center;
+}
+
+.pag-pix h5 {
+     color: var(--c04);
+}
+
+#valor-pgto {
+     margin-top: 40px;
+     display: flex;
+     flex-direction: column;
+}
+
+#valor-pgto h1 {
+     margin-top: -20px;
+     font-weight: 700;
+     color: var(--c02);
+
+}
+
+@media (max-width: 480px) {
+   
+
+     .nav-item {
+          color: var(--c01);
+          margin-top: 10px;
+     }
+
+     nav {
+          position: absolute;
+          left: 30vw;
+          height: 430px;
+          width: 350px;
+          
+        
+          /* border-top-left-radius:50%;
+          border-bottom-left-radius:50%; */
+          background-image: url(../IMG/Ellipse\ 1.png);
+          background-size: cover;
+          background-position: center;
+          
+          background-repeat: no-repeat;
+          
+     }
+     
+     #Logo img {
+          position: relative;
+          right: 8vw;
+
+          
+          width: 150px;
+          height: 150px;
+          object-fit: contain;
+          
+
+     }
+
+
+     .texto {
+          margin-left: 0px;
+          margin-right: 0px;
+          margin-top: 350px;
+          margin-bottom: 20px;
+         
+         
+          width: 400px;
+          
+     }
+
+     h1 {
+          color: var(--c07);
+          
+     }
+     
+     .título {
+          margin-left: 0px;
+          
+     }
+     
+     
+     .principal{
+          margin-top: 0px;
+          
+     }
+     
+     .conteudo-home{
+          margin-top: 250px ;
+          flex-direction: column;
+          align-items: center;
+          gap: 2.5rem;
+     }
+     /* cadastro */
+     #cadastro{
+          margin-top: 300px;
+     }
+
+     /* pagamento */
+
+     .conteudo{
+          margin-top: 450px ;
+          flex-direction: column;
+          align-items: center;
+     }
+
+     #h1-pagamento{
+          margin-top: 100px;
+     }
+}

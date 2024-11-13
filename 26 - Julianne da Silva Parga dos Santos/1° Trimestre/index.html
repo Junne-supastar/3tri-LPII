@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curatio Life - Home</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <header>
+        <img src="IMG/logo5embrancopng.png" alt="" id="logo">
+    
+        <nav id="navegacao">
+            <ul id="lista">
+                <a href="../index.php">
+                    <li class="li um">Home</li>
+                </a>
+                <a href="#">
+                    <li class="li dois">Localização</li>
+                </a>
+                <a href="#">
+                    <li class="li tres">Login</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="principal">
+        <div class="foto">
+            <img src="IMG/medica.png" alt="" id="medica">
+        </div>
+
+        <div class="formulario">
+            <h2> Insira suas informações para agendar sua consulta</h2>
+
+            <form action="" method="get" id="form" onsubmit="consultar()">
+                <div id="infos">
+                    <div class="div-lado divum">
+                        <span>
+                            <label for="nome">Nome </label>
+                        </span>
+                            <input type="text" name="nome" id="nome">
+                    </div>
+                    
+                    <div class="div-lado divdois" >
+                        <span>
+                            <label for="idade"> Idade </label></span>
+                        <input type="number" name="idade" id="idade">
+                    </div>
+                </div>
+
+                <div class="selects">
+                    <select name="" id="departamento" onchange="calcularConsulta()" required>
+                        <option> Tipo de consulta</option>
+                        <option value="70">Dermatologia (R$70,00)</option>
+                        <option value="80">Cardiologia (R$80,00)</option>
+                        <option value="100">Fisioterapia (R$100,00)</option>
+                        <option value="95" >Fonoaudiologia (R$95,00)</option>
+                    </select>
+                
+                
+                    <select name="" id="filial">
+                        <option value=""> Filial</option>
+                        <option value="anchieta">Anchieta</option>
+                        <option value="copacabana">Copacabana</option>
+                        <option value="marechal">Marechal Hermes</option>
+                        <option value="nilopolis">Nilopolis</option>
+                    </select>
+                
+                
+                    <select name="" id="horarios">
+                        <option value=""> Horários</option>
+                        <option value="07">07h</option>
+                        <option value="09">09h</option>
+                        <option value="11">11h</option>
+                        <option value="13">13h</option>
+                        <option value="15">15h</option>
+                        <option value="17">17h</option>
+                        <option value="19">19h</option>
+                        <option value="21">21h</option>
+                    </select>
+                </div>
+
+                <div id="Email">
+                    <div><label for="email">E-mail para contato</label></div>
+                    <input type="email" name="email" id="email">
+                </div>
+
+                <div id="Plano">
+                    <div id="plano">
+                        <label for="plano"> Possui plano?</label>
+                    </div>
+                    <input type="radio" name="plano" id="sim" value="sim" >
+                    <label for="sim"> Sim</label>
+
+                    <input type="radio" name="plano" id="nao" value="nao">
+                    <label for="nao"> Não</label>
+                </div>
+
+                <button type="submit">Consultar</button>
+                <button type="reset"> Resetar</button>
+            </form>
+
+        </div>
+    </main>
+
+
+    <script src="JS/script.js"></script>
+</body>
+</html>
